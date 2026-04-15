@@ -1,8 +1,8 @@
 # Project Charter
 
 ## Project Overview
-**Project Name:** [Project Name - To Be Defined]  
-**Project ID:** PMO-2026-001  
+**Project Name:** Nishio MY PX33 TOTO   
+**Project ID:** P1048-Nishio MY PX33 TOTO  
 **Document Date:** 15 April 2026  
 **Location:** Malaysia  
 

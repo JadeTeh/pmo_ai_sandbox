@@ -23,7 +23,7 @@ Deliver a software solution with integrated hardware components to meet business
 ## Key Success Criteria
 - Project delivered on schedule (4 months)
 - All 240 development hours utilized effectively
-- Budget adherence within RM101,567 (estimated total)
+- Budget adherence within RM89,777.50 (approved baseline)
 - Zero critical defects at UAT closure
 - 100% user acceptance sign-off
 - Complete documentation and knowledge transfer
@@ -69,13 +69,18 @@ Deliver a software solution with integrated hardware components to meet business
   - End of Month 4: UAT closed, handover complete
 
 ## Budget Summary
-- **Total Estimated Project Cost:** RM101,567
-  - COGS: RM58,860
-  - Development Labor: TBD (based on FX rate)
-  - Installation Labor: TBD (based on FX rate)
-  - Installation Travel: RM2,000
+- **Total Budget Baseline:** RM89,777.50
+  - Hardware & Material: RM54,000.00
+  - Development Labor: RM19,215.00
+  - Installation Labor: RM3,202.50
+  - Pre-Sales Cost: RM6,500.00
+  - Installation Travel: RM2,000.00
+  - Shipment: RM1,080.00
+  - Tax / Custom Duty: RM3,240.00
+  - Miscellaneous: RM540.00
 - **Budget Owner:** [To Be Assigned]
-- **Contingency:** 1% miscellaneous buffer included
+- **FX Assumption:** USD1 = RM4.27
+- **Contingency:** Included as RM540.00 miscellaneous buffer
 
 ## Risk Summary
 - Resource availability and skill gaps

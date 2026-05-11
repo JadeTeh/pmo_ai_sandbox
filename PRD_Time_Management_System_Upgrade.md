@@ -4,8 +4,8 @@
 | Field | Details |
 |-------|---------|
 | **Document Title** | Time Management System Upgrade - PRD |
-| **Version** | 1.0 |
-| **Date** | 2025 |
+| **Version** | 2.0 |
+| **Date** | 2026 |
 | **Status** | Draft |
 | **Author** | Project Controller |
 | **Stakeholders** | Internal Operations, Product & Solution, Robotic Application, FA & HR, Robotic DevOps |
@@ -64,19 +64,44 @@ The current Time Management System has several pain points identified by team me
 
 #### Cost Center Code Structure
 
-| Code | Category | 1000-4000: Operational Tasks | x500: Meetings & Coordination |
-|------|----------|------------------------------|-------------------------------|
-| 0 | General & Corporate | 0100: Town Hall / General Assembly<br>0200: Health & Safety (HSE) Briefings<br>0300: Team Building / Company Events | 0500: General Corporate Updates<br>0510: Safety Committee Meetings |
-| 1 | Proposal & Tendering | 1100: Solution Design & Layout<br>1200: Costing & BOM Estimation<br>1300: Tendering Documentation | 1500: Internal Tender Sync<br>1510: External Client Pitch / Presentation<br>1520: Site Walk/Survey Meeting |
-| P | Project Execution | See Project Execution Breakdown below | (N/A) |
-| 2 | Research & Dev | 2100: Internal Tooling Development<br>2200: Hardware/Sensor Testing<br>2300: R&D Documentation | 2500: R&D Brainstorming<br>2510: Technical Workshops<br>2520: Vendor Demo / Tech Presentation |
-| 3 | PHs & Leaves | 3100: Annual Leave<br>3200: Medical / Sick Leave<br>3300: Public Holiday<br>3400: Compassionate/Special Leave | (N/A) |
-| 4 | Internal Operation | 4100: Office Admin / Maintenance<br>4200: Finance & Bookkeeping<br>4300: Supply Chain & Logistics | 4500: Management Strategy Meeting<br>4510: Weekly Operations Sync<br>4520: Finance Audit Review |
-| 5 | Business Dev | 5100: Lead Generation / Sales<br>5200: Marketing & Social Media<br>5300: Exhibition Planning | 5500: Sales Pipeline Review<br>5510: Marketing Strategy Meeting<br>5520: Networking / External Seminars |
-| 6 | Technical Support | 6100: Warranty Services (Hands-on)<br>6200: Maintenance (Scheduled)<br>6300: Ad-hoc Repairs | 6500: Support Case Review<br>6510: Maintenance Planning Sync |
-| 7 | IT & Infrastructure | 7100: Server & Network Admin<br>7200: Asset/Hardware Maintenance<br>7300: Internal Systems (TMS Fixes) | 7500: IT Security / VPN Sync<br>7510: TMS Technical Review Meeting |
-| 8 | Project Control | 8100: Internal Auditing (TMS vs Bukku)<br>8200: Data Normalization / Cleaning<br>8300: Process Workflow Development | 8500: Audit Clarification Meeting<br>8510: PRD/Process Review<br>8520: Budget vs Actual Presentation |
-| 9 | Human Resource | 9100: Payroll & Staff Claims<br>9200: Recruitment & Interviewing<br>9300: Training & Induction | 9500: Hiring & Strategy Meeting<br>9510: Staff Appraisal (1-on-1)<br>9520: Training / Onboarding Sync |
+| Dept # | Department Name | Block | Code | Activity Name | Description / Placement |
+|--------|-----------------|-------|------|---------------|-------------------------|
+| 1 | Sales & Project | 81xx | 8110 | Tendering & Props | Tech Proposal, Layout & Quotes |
+| | | | 8120 | Business Dev | Lead Gen & Client Pitching |
+| | | | 8190 | Sales Meetings | External Client Syncs |
+| 2 | Application | 82xx | 8210 | Backend Dev | API, Logic, DB & DevOps |
+| | | | 8220 | Frontend Dev | UI/UX, HMI & Integration |
+| | | | 8230 | Process Mgmt | Manage server |
+| | | | 8240 | System Mgmt | System workflows |
+| | | | 8250 | System QA | Testing, Bug Fixing & QA |
+| | | | 8260 | Technical Support | Bug fixing for live sites |
+| | | | 8290 | App Meetings | Technical Syncs & Sprint Planning |
+| 3 | Product & Solution | 83xx | 8310 | Simulations | VC/RCS Modeling |
+| | | | 8320 | Solution Design | High-Level Architecture & R&D |
+| | | | 8390 | R&D Meetings | Internal Design Reviews |
+| 4 | Internal Operation | 91xx | 9111 | HR Admin | Payroll, Claims & Benefits |
+| | | | 9112 | Recruitment | Hiring & Onboarding |
+| | | | 9121 | Accounting (DR) | Daily Routine: Accounting |
+| | | | 9122 | FYE (DR) | Daily Routine: Year End |
+| | | | 9123 | Accounting (RR) | Review/Reporting: Accounting |
+| | | | 9124 | FYE (RR) | Review/Reporting: Year End |
+| | | | 9125 | Projections | Monthly Budget & Cashflow |
+| | | | 9131 | Shipment | Planning & Documentation |
+| | | | 9141 | Gov Paperwork | Official Paperwork & Gov Topics |
+| | | | 9142 | Official Visits | Gov offices, Seminars, Offline |
+| | | | 9143 | Miscellaneous | General Admin Tasks |
+| | | | 9151 | Project Control | Auditing & Normalization |
+| | | | 9152 | Process Dev | SOPs, PRD & Gap Analysis |
+| | | | 9153 | Tools Dev | Learning/Explore new tools |
+| | | | 9190 | Meeting | Internal Ops Syncs |
+| 5 | General | 98xx | 9810 | Corporate | Town Halls, HSE & Events |
+| | | | 9820 | Onboarding | System Exploration (New Joiners) |
+| | | | 9830 | Super Summary | Weekly Reporting tasks |
+| | | | 9890 | Management Meeting | Weekly Ops & Management Strategy |
+| 6 | Leaves & Absence | 99xx | 9910 | Annual Leave | Approved Personal Leave |
+| | | | 9920 | Medical Leave | MC / Sick Leave |
+| | | | 9930 | Public Holiday | Gazetted Holidays |
+| | | | 9940 | Unpaid Leave | Leave without pay |
 
 #### 1. System Architecture: The "Parent-Child" Logic
 
@@ -121,7 +146,7 @@ These codes apply to all project-based work (e.g., P1048, P1053).
 | Req ID | Requirement | Description |
 |--------|-------------|-------------|
 | FR-4.2.1 | Task/Subtask Approval Notifications | Notify project admin when a new task/subtask requires approval |
-| FR-4.2.2 | Email Prompts | Send email prompts for pending request approvals |
+| FR-4.2.2 | Microsoft Teams Notifications | Notifications will be sent via Microsoft Teams chat instead of email. |
 | FR-4.2.3 | Visual Indicators | Display icon/label on side tab for pending approvals |
 | FR-4.2.4 | Project Dashboard | Display full project dashboard with summary view |
 | FR-4.2.5 | Dashboard Filtering | Implement week-based filtering option (filter when needed, not default) |
@@ -267,11 +292,9 @@ These codes apply to all project-based work (e.g., P1048, P1053).
 
 | Phase | Duration | Deliverables |
 |-------|----------|--------------|
-| **Phase 1: Foundation** | Weeks 1-3 | Cost center standardization, External access setup, Security implementation |
-| **Phase 2: Core Features** | Weeks 4-7 | Approval workflows, Notifications, Clock-in improvements, Dashboard |
-| **Phase 3: Enhanced Features** | Weeks 8-10 | Templates, Duplication, Drag & drop, Reporting |
-| **Phase 4: UI/UX Polish** | Weeks 11-12 | Interface improvements, Testing, Bug fixes |
-| **Phase 5: Deployment** | Week 13 | Go-live, Training, Support |
+| **Phase 1: UI Fixes & Enhancements** | Week 1 | UI fixes and enhancements, Internal testing, Deployment |
+| **Phase 2: Database Migration & Backend Refactoring** | Weeks 2-3 | Migrate database from SQLite to PostgreSQL, Backend code modifications (structure & maintainability), No functional changes to existing features, Post-migration testing & optimization, Deployment |
+| **Phase 3: New Features & Enhancements** | Weeks 4-7 | Implement all new pages requested by user, Add required new data parameters in backend, Integrate new features with existing system, Testing, bug fixes, and final polishing, User training & handover |
 
 ---
 

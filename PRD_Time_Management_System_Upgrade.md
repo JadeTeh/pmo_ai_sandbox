@@ -71,10 +71,7 @@ The current Time Management System has several pain points identified by team me
 | | | | 8190 | Sales Meetings | External Client Syncs |
 | 2 | Application | 82xx | 8210 | Backend Dev | API, Logic, DB & DevOps |
 | | | | 8220 | Frontend Dev | UI/UX, HMI & Integration |
-| | | | 8230 | Process Mgmt | Manage server |
-| | | | 8240 | System Mgmt | System workflows |
-| | | | 8250 | System QA | Testing, Bug Fixing & QA |
-| | | | 8260 | Technical Support | Bug fixing for live sites |
+| | | | 8230 | System QA | Testing, Bug Fixing & QA |
 | | | | 8290 | App Meetings | Technical Syncs & Sprint Planning |
 | 3 | Product & Solution | 83xx | 8310 | Simulations | VC/RCS Modeling |
 | | | | 8320 | Solution Design | High-Level Architecture & R&D |
@@ -110,7 +107,7 @@ To maintain data integrity, the system shall utilize a two-tier selection proces
 | Tier | Description | Example |
 |------|-------------|---------|
 | **Tier 1 (Parent)** | The Project ID | P1048, P1053 |
-| **Tier 2 (Child)** | The Activity Code | 420 - On-site Installation |
+| **Tier 2 (Child)** | The Activity Code | 440 - On-site Installation |
 
 #### 2. Project Execution (P-Series) Activity Codes
 
@@ -118,26 +115,27 @@ These codes apply to all project-based work (e.g., P1048, P1053).
 
 | Phase | Activity Code | Task Name & Included Activities |
 |-------|---------------|--------------------------------|
-| **100: Initiation** | 101 | Kickoff Meeting & Project Charter |
-| | 110 | Technical Proposal (Layout, AMR Qty, Proposal) |
-| | 120 | VC Simulation (Map Editing, Process Flow, Modeling, Video) |
-| | 130 | RCS Simulation (Map Configuration, RCS Video) |
-| | 140 | Commercial & Legal (Offer, Contract, Tech Agreement) |
-| **200: Planning** | 201 | Project Plan & Software Development Plan |
-| | 210 | Supply Chain (BOM List, Procurement) |
-| | 220 | Site Prep (Floor Inspection, Travel Preparation) |
-| **300: SW Dev** | 301 | Planning, Feasibility & Requirement Gathering |
-| | 310 | Design & Architecture (UI/UX, DB, Infra, Security) |
-| | 320 | Implementation (Frontend, Backend, Integration, Env) |
-| | 330 | Testing & QA (Unit, E2E, Performance, UAT) |
-| | 340 | Deployment, Maintenance & Monitoring |
-| **400: Execution** | 401 | In-house Pre-Comm & Internal Testing |
-| | 410 | Factory Acceptance Test (FAT) & Deliveries |
-| | 420 | On-site Install (QR/Rack, Robot Setup, Branding) |
-| | 430 | Commissioning & Ramp-up Optimization |
-| **500: Closing** | 501 | Customer Training & Handover Documentation |
-| | 510 | Project Sign-off |
-| | 520 | Tech Support (Remote, Onsite, Patch/Update) |
+| **100: Initiation** | 110 | Kickoff Meeting & Project Charter |
+| | 120 | Technical Proposal (Layout, AMR Qty, Proposal) |
+| | 130 | VC Simulation (Map Editing, Process Flow, Modeling, Video) |
+| | 140 | RCS Simulation (Map Configuration, RCS Video) |
+| | 150 | Commercial & Legal (Offer, Contract, Tech Agreement) |
+| **200: Planning** | 210 | Project Plan & Software Development Plan |
+| | 220 | Supply Chain (BOM List, Procurement) |
+| | 230 | Site Prep (Floor Inspection, Travel Preparation) |
+| **300: SW Dev** | 310 | Planning, Feasibility & Requirement Gathering |
+| | 320 | Design & Architecture (UI/UX, DB, Infra, Security) |
+| | 330 | Implementation (Frontend, Backend, Integration, Env) |
+| | 340 | Testing & QA (Unit, E2E, Performance, UAT) |
+| | 350 | Deployment, Maintenance & Monitoring |
+| **400: Execution** | 410 | In-house Pre-Comm & Internal Testing |
+| | 420 | Factory Acceptance Test (FAT) & Deliveries |
+| | 430 | System Management |
+| | 440 | On-site Install (QR/Rack, Robot Setup, Branding) |
+| | 450 | Commissioning & Ramp-up Optimization |
+| **500: Closing** | 510 | Customer Training & Handover Documentation |
+| | 520 | Project Sign-off |
+| | 530 | Tech Support (Remote, Onsite, Patch/Update) |
 
 ### 4.2 Notifications & Approval System (Priority: High)
 
@@ -288,13 +286,13 @@ These codes apply to all project-based work (e.g., P1048, P1053).
 
 ---
 
-## 11. Timeline (Proposed)
+## 11. Timeline 
 
-| Phase | Duration | Deliverables |
-|-------|----------|--------------|
-| **Phase 1: UI Fixes & Enhancements** | Week 1 | UI fixes and enhancements, Internal testing, Deployment |
-| **Phase 2: Database Migration & Backend Refactoring** | Weeks 2-3 | Migrate database from SQLite to PostgreSQL, Backend code modifications (structure & maintainability), No functional changes to existing features, Post-migration testing & optimization, Deployment |
-| **Phase 3: New Features & Enhancements** | Weeks 4-7 | Implement all new pages requested by user, Add required new data parameters in backend, Integrate new features with existing system, Testing, bug fixes, and final polishing, User training & handover |
+| Phase | Duration | Dates | Deliverables |
+|-------|----------|-------|--------------|
+| **Phase 1: UI Fixes & Enhancements** | Week 1 | 18 May - 24 May 2026 | UI fixes and enhancements, Internal testing, Deployment |
+| **Phase 2: Database Migration & Backend Refactoring** | Weeks 2-3 | 25 May - 7 June 2026 | Migrate database from SQLite to PostgreSQL, Backend code modifications (structure & maintainability), No functional changes to existing features, Post-migration testing & optimization, Deployment |
+| **Phase 3: New Features & Enhancements** | Weeks 4-7 | 8 June - 5 July 2026 | Implement all new pages requested by user, Add required new data parameters in backend, Integrate new features with existing system, Testing, bug fixes, and final polishing, User training & handover |
 
 ---
 

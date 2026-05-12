@@ -5,10 +5,7 @@
 | | | | 8190 | Sales Meetings | External Client Syncs |
 | 2 | Application | 82xx | 8210 | Backend Dev | API, Logic, DB & DevOps |
 | | | | 8220 | Frontend Dev | UI/UX, HMI & Integration |
-| | | | 8230 | Process Mgmt | Manage server |
-| | | | 8240 | System Mgmt | System workflows |
 | | | | 8250 | System QA | Testing, Bug Fixing & QA |
-| | | | 8260 | Technical Support | Bug fixing for live sites |
 | | | | 8290 | App Meetings | Technical Syncs & Sprint Planning |
 | 3 | Product & Solution | 83xx | 8310 | Simulations | VC/RCS Modeling |
 | | | | 8320 | Solution Design | High-Level Architecture & R&D |

@@ -163,8 +163,8 @@ These codes apply to all project-based work (e.g., P1048, P1053).
 
 | Req ID | Requirement | Description |
 |--------|-------------|-------------|
-| FR-4.4.1 | Drag & Drop Rearrangement | Implement drag function to rearrange task order |
-| FR-4.4.2 | Auto-Numbering | Auto-assign numbers to tasks to prevent duplicate numbering across different groups |
+| FR-4.4.1 | Streamlined Task Approval | Improve task creation approval process - consider limiting approval scope to specific topics/categories |
+| FR-4.4.2 | Drag & Drop Rearrangement | Implement drag function to rearrange task order |
 | FR-4.4.3 | Duplicate Number Resolution | Resolve existing duplicate numbers (e.g., 9993 appearing twice for different members in different groups) |
 
 ### 4.5 UI/UX Improvements (Priority: Medium)

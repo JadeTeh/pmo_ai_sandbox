@@ -56,11 +56,10 @@ The current Time Management System has several pain points identified by team me
 | FR-4.1.1 | Standardized Cost Center Assignment | Implement a structured numbering system (0-9, P) for departments/categories with operational tasks (1000-4000) and meetings/coordination (x500). See detailed breakdown below. |
 | FR-4.1.2 | Cost Center List Management | Collaborate with stakeholders to create a definitive, non-random list of cost centers for each department |
 | FR-4.1.3 | Dropdown Navigation | Replace scrolling lists with dropdown menus on each header for easier navigation |
-| FR-4.1.4 | Search Functionality | Implement search button/functionality as an alternative to scrolling (wishlist item) |
-| FR-4.1.5 | User Hierarchy & Approval | All new projects/tasks must be approved by Head of Department (HoD), not system admin. Users can create items subject to HoD approval |
-| FR-4.1.6 | Number Range Visibility | Enable view of all numbers (0xxx-9xxx) with appropriate access restrictions |
-| FR-4.1.7 | Access Restrictions | Users without proper access cannot click or view details of restricted items |
-| FR-4.1.8 | Public Holidays by Country | Include public holidays for respective countries. Users must be assigned to a country to view relevant holidays |
+| FR-4.1.4 | User Hierarchy & Approval | All new projects/tasks must be approved by Head of Department (HoD), not system admin. Users can create items subject to HoD approval |
+| FR-4.1.5 | Number Range Visibility | Enable view of all numbers (0xxx-9xxx) with appropriate access restrictions |
+| FR-4.1.6 | Access Restrictions | Users without proper access cannot click or view details of restricted items |
+| FR-4.1.7 | Public Holidays by Country | Include public holidays for respective countries. Users must be assigned to a country to view relevant holidays |
 
 #### Cost Center Code Structure
 
@@ -157,7 +156,6 @@ These codes apply to all project-based work (e.g., P1048, P1053).
 |--------|-------------|-------------|
 | FR-4.3.1 | Date Navigation | Implement quick date selection via small dropdown calendar instead of week-by-week scrolling |
 | FR-4.3.2 | Lunch Break Automation | Allow users to set default lunch time to avoid double clock-in (morning and afternoon sessions). Since lunch hours are consistent daily, system should auto-deduct lunch break |
-| FR-4.3.3 | External Access | Make system accessible as an external website, not limited to internal network/VPN access. This is critical for on-site clock-in scenarios |
 
 ### 4.4 Task Management (Priority: Medium)
 
@@ -165,10 +163,9 @@ These codes apply to all project-based work (e.g., P1048, P1053).
 
 | Req ID | Requirement | Description |
 |--------|-------------|-------------|
-| FR-4.4.1 | Streamlined Task Approval | Improve task creation approval process - consider limiting approval scope to specific topics/categories |
-| FR-4.4.2 | Drag & Drop Rearrangement | Implement drag function to rearrange task order |
-| FR-4.4.3 | Auto-Numbering | Auto-assign numbers to tasks to prevent duplicate numbering across different groups |
-| FR-4.4.4 | Duplicate Number Resolution | Resolve existing duplicate numbers (e.g., 9993 appearing twice for different members in different groups) |
+| FR-4.4.1 | Drag & Drop Rearrangement | Implement drag function to rearrange task order |
+| FR-4.4.2 | Auto-Numbering | Auto-assign numbers to tasks to prevent duplicate numbering across different groups |
+| FR-4.4.3 | Duplicate Number Resolution | Resolve existing duplicate numbers (e.g., 9993 appearing twice for different members in different groups) |
 
 ### 4.5 UI/UX Improvements (Priority: Medium)
 
@@ -241,7 +238,7 @@ These codes apply to all project-based work (e.g., P1048, P1053).
 | **P1 - Critical** | External access for clock-in, Cost center standardization, Approval workflow with notifications, Dashboard with hours vs. budget |
 | **P2 - High** | Date navigation improvements, Lunch break automation, Project templates, Auto-numbering |
 | **P3 - Medium** | Drag & drop functionality, Right-click edit, UI alignment improvements, Weekly data extraction |
-| **P4 - Low (Wishlist)** | Search functionality for dropdowns, Analog clock selector |
+| **P4 - Low (Wishlist)** | Analog clock selector |
 
 ---
 

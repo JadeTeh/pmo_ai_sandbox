@@ -250,7 +250,7 @@ These codes apply to all project-based work (e.g., P1048, P1053).
 | Task approval turnaround | Reduce from days to hours |
 | User satisfaction score | Increase to 4.0/5.0 |
 | Duplicate task numbers | Reduce to 0 |
-| On-site clock-in success rate | 100% (without VPN dependency) |
+| On-site clock-in success rate | 100% |
 | Dashboard load time | Under 3 seconds |
 
 ---

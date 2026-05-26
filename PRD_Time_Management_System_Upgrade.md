@@ -285,11 +285,31 @@ These codes apply to all project-based work (e.g., P1048, P1053).
 
 ## 11. Timeline 
 
-| Phase | Duration | Dates | Deliverables |
-|-------|----------|-------|--------------|
-| **Phase 1: UI Fixes & Enhancements** | Week 1 | 18 May - 24 May 2026 | UI fixes and enhancements, Internal testing, Deployment |
-| **Phase 2: Database Migration & Backend Refactoring** | Weeks 2-3 | 25 May - 7 June 2026 | Migrate database from SQLite to PostgreSQL, Backend code modifications (structure & maintainability), No functional changes to existing features, Post-migration testing & optimization, Deployment |
-| **Phase 3: New Features & Enhancements** | Weeks 4-7 | 8 June - 5 July 2026 | Implement all new pages requested by user, Add required new data parameters in backend, Integrate new features with existing system, Testing, bug fixes, and final polishing, User training & handover |
+| Phase | Deadline | Deliverables |
+|-------|----------|--------------|
+| **Phase 1** | **2 June 2026** | Database migration and backend refactoring |
+| | | FR-4.3.1: Date selection navigation |
+| | | FR-4.4.2 & FR-4.6.5: Drag & drop sort |
+| | | FR-4.5.1 & FR-4.7.1: Edit button placement |
+| | | FR-4.6.3: Project duplication |
+| | | FR-4.6.7: Add project in homepage |
+| | | FR-4.7.2: Use end time for clock in |
+| | | FR-4.7.6: Default collapse activity summary |
+| | | FR-4.7.7: Sizing (preferred font size) |
+| | | FR-4.1.1, FR-4.1.2, FR-4.1.3: Cost center |
+| | | FR-4.2.3: Visual indicator for approval |
+| | | FR-4.2.4: Set default date for project summary |
+| | | FR-4.2.5 & FR-4.6.1: Weekly view for project summary |
+| | | FR-4.3.2: Lunch break automation |
+| | | **Fixes:** |
+| | | FR-4.6.8: Add member to project |
+| | | FR-4.7.3: Project details |
+| | | FR-4.7.4 & FR-4.7.5: Calendar and clock dropdown |
+| **Phase 2** | **23 June 2026** | FR-4.6.4: Weekly data extraction |
+| | | FR-4.1.7: Public holidays by country |
+| | | FR-4.2.2: Microsoft Teams notification |
+| | | FR-4.6.2: Hours summary dashboard |
+| | | FR-4.6.6: Project templates |
 
 ---
 
